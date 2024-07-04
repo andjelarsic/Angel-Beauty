@@ -1,0 +1,486 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="mailto:andjela.arsic.28.23@ict.edu.rs" />
+    <meta name="keywords" content="Angel Beauty, Salon, Spa, Skin, Makeup, Massage, Belgrade "/>
+    <meta name="description" content="We are the leading beauty salon in Belgrade providing high-quality hairdressing, makeup, and skin care services to everyone."/>
+    <meta name="copyright" content="Andjela Arsic 2023" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:ital@0;1&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+    <title>Angel Beauty</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top-wrap bg-black text-white py-10">
+            <div class="container">
+                <div class="header-top">
+                     <ul>
+                         <li><i class="fa-regular fa-clock"></i> <span>Opening hours :</span> Monday - friday, 08am - 05pm</li>
+                         <li><i class="fa-solid fa-location-dot"></i> <span>Address :</span> Zdravka Celara, Beograd</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="index.html"> <img src="img/logoo.png" alt="logo"></a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Angel Beauty</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="about.html">About us</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="pricelist.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
+                  </li>
+                 <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="author.html">Author</a>
+                </li>
+            </div>
+          </div>
+          <a href="#" class="user"><i class="fa-regular fa-user me-4"></i></a>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#ModalForm"> <a href="#" class="login-button">Login</a></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+<div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-dark">
+                <h1 class="text-center"><i class="fa-solid fa-circle-user text-white"></i></h1>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                    <p>Not a member? <a href="#">Register now</a></p>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<main>
+<section class="hero-section rel z-1 bg-butter">
+  <div class="container">
+      <div class="row align-items-center row2">
+          <div class="col-lg-6 col-md-8 col-sm-10">
+              <div class="hero-content mt-200 mb-220">
+                 <span class="bg-text">Angel</span>
+                  <h1 class="one">Natural Beauty spa salon</h1>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="hero-right-image" style="background-image: url(img/background.webp)"></div>
+</section>
+
+<section class="section section-lg bg-gray-100">
+  <div class="container d-flex">
+    <div class="row row-50 align-items-lg-center justify-content-xl-between">
+      <div class="col-lg-6">
+        <div class="box-images">
+          <div class="box-images-item box-images-1"><img src="img/salon1.jpg" alt="image1" width="282" height="282"/>
+          </div>
+    
+          <div class="box-images-item box-images-2"><img src="img/skin (1).jpg" alt="image2" width="240" height="369"/>
+          </div>
+          <div class="box-images-item box-images-3"><img src="img/slikaa.jpg" alt="image3" width="259" height="369"/>
+          </div>
+          <div class="box-images-item box-images-4"><img src="img/slika5 (1).jpg" alt="image4" width="266" height="266"/>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-5">
+          <h2 class="heading-decorate text-center">Why Our Clients <br><span class="divider"></span>Choose Us
+          </h2>
+          <p class="big text-gray-800">We are the leading beauty salon in Belgrade providing high-quality hairdressing, makeup, and skin care services to everyone.</p>
+          <p class="text-spacing-60">Our clients appreciate and value our level of customer service, the skills of our stylists and estheticians as well as our professional approach to everything we do.</p>
+          <div class="d-grid gap-2 col-4 mx-auto">
+            <button class="btn btn login-button" type="button"><a href="about.html">About us <i class="fa-solid fa-arrow-right-long ms-2 text-center "></i></a></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="container py-5">
+    <div class="section-head salon-head text-center mt-5" data-content="Services">
+      <h6 class="sub-title">About Our Services</h6>
+      <h2 class="title"> Services</h2>
+    </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+  <div class="col">
+  <div class="card">
+  <i class="bi bi-makeup"></i>
+  <div class="card-body">
+    <h5 class="card-title">Make-up</h5>
+    <p class="card-text">Makeup enhances natural beauty by adding definition to the face.</p>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+  <div class="card">
+    <i class="bi bi-massage"></i>
+  <div class="card-body">
+    <h5 class="card-title">Massage</h5>
+    <p class="card-text">Massage promotes relaxation by relieving muscle tension reducing stress.</p>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+  <div class="card">
+    <i class="bi bi-pedicure"></i>
+  <div class="card-body">
+    <h5 class="card-title">Pedicure</h5>
+    <p class="card-text">A pedicure enhances foot health by exfoliating dead skin and shaping nails</p>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+  <div class="card">
+    <i class="bi bi-nails"></i>
+  <div class="card-body">
+    <h5 class="card-title">Nails</h5>
+    <p class="card-text">Well-groomed nails enhance your overall appearance, reflecting attention to detail. </p>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+  <div class="card">
+    <i class="bi bi-hair"></i>
+  <div class="card-body">
+    <h5 class="card-title">Hair style</h5>
+    <p class="card-text">A hairstyle can define your look, reflecting style and enhancing your appearance.
+      </p>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+  <div class="card">
+    <i class="bi bi-skin"></i>
+  <div class="card-body">
+    <h5 class="card-title">Skin treatmens</h5>
+    <p class="card-text ">Skin treatments improve skin health and reducing signs of aging or damage. </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class="testimonial">
+<div class="row w-80">
+  <div class="container mt-4 py-3">
+    <div class="section-head salon-head text-center mt-5 head" data-content="Our Clients">
+      <h6 class="sub-title">About Our Clients </h6>
+      <h2 class="title">Our Clients</h2>
+    </div>
+</div>
+  <div class="container">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-img">
+            <img src="img/client1.jpg" class="d-block w-100" alt="first">
+          </div>
+          
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="pt-3">Amilia Carpenter  </h5>
+            <p>My experience at Angel Beauty Salon has always been a professional and pleasurable one. Marisa goes the extra mile to keep her clients educated and up to date with current practices and products she feels will be of use to us.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-img">
+            <img src="img/client2.jpg" class="d-block w-100" alt="second">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="pt-3">Sabrina Micleson</h5>
+            <p>One of the best salon experiences I've ever had! From the dry consultation to the aroma therapy head massage, Faith has a way of making you feel and look like a million bucks! She's truly one of the most unique hair stylists I've ever met.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img">
+            <img src="img/client3 .jpg" class="d-block w-100" alt="third">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="pt-3">Tayor Walker</h5>
+            <p>I had a facial with Marisa at Angel Beauty. It was extremely relaxing and my skin has never looked better. Will definitely be booking another one in!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+</section>
+<section class="new" id="new">
+    <div class="container mt-5 py-2">
+      <div class="section-head salon-head text-center mt-5 head" data-content="Soon In Salon">
+        <h6 class="sub-title">Soon In Our Salon </h6>
+        <h2 class="title">Soon In Our Salon</h2>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4 mb-5">
+        <div class="new-col">
+          <div class="card">
+            <img
+              class="card-img-top rounded-top"
+              src="img/Brow .jpg"
+              alt="Brow"
+            />
+            <div class="card-body">
+              <h5 class="card-title cursivetext">Brow Lamination</h5>
+              <button type="button" class="btn btn login-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Learn More
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Brow Lamination</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ps-3 pe-2">
+                      <p class="text-md-start">Brow lamination is a new, innovative beauty treatment that has continued to grow in popularity, recreating the trending look of thick, bushy brows. Brow lamination is great for those who love a ‘brushed-up' look but can’t seem to tame their brow hair due to it being too straight or fine.The brow lamination process itself doesn’t take very long; only around 15-20 minutes. Some brow lamination treatments also include the tinting and/or waxing of brows before or after, which altogether can take around 30-40 minutes in a salon.
+
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn login-button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-5">
+        <div class="new-col">
+          <div class="card">
+            <img class="card-img-top" src="img/laser.jpg"alt="laser removal" />
+            <div class="card-body">
+              <h5 class="card-title cursivetext">Laser Removal Hair</h5>
+              <button type="button" class="btn btn login-button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Learn More
+              </button>
+              <div class="modal fade" id="exampleModal2" tabindex=".1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Laser Removal Hair</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ps-3 pe-2">
+                      <p class="text-md-start">Laser hair removal is a painless method of permanent hair removal that uses highly concentrated beams of light to destroy hair follicles, preventing their regrowth. Advanced laser technology provides results that will make you feel confident in your skin every day. Whether you want to remove hair from your legs, underarms, bikini area, or any other part of your body, we have a solution for you. The treatments are quick, efficient, and completely safe.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn login-button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-5">
+        <div class="new-col">
+          <div class="card">
+            <img class="card-img-top" src="img/lashes.jpg"alt="new"/>
+            <div class="card-body">
+              <h5 class="card-title cursivetext">Lash Extension</h5>
+              <button type="button" class="btn btn login-button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Learn More
+              </button>
+              <div class="modal fade" id="exampleModal3" tabindex=".1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Lash Extension</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ps-3 pe-3">
+                     <p class="text-md-start">Eyelash extensions are individual, semi-permanent false lashes that are attached to your natural eyelashes (one false lash per individual lash). They create dramatically fuller, longer, darker lashes in one 45-minute appointment. To adhere the false lashes to your natural lashes, a semi-permanent, eye-safe glue is used, which will ware off over the course of a 4-8 week period (or more quickly if you used oil-based products or are a rough sleeper).</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn login-button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer id="footer1" class="footer">
+  <section class="bg-light py-4 py-md-5 py-xl-8 border-top border-light">
+      <div class="container overflow-hidden">
+          <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+              <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="widget">
+                      <a href="index.html">
+                          <img src="img/logoo.png" alt="logo" width="200" height="100">
+                      </a>
+                  </div>
+              </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+          <h4 class="widget-title mb-4">Contact us</h4>
+          <address class="mt-10"><p>Zdravka Celara, Belgrade, Serbia</p></address>
+          <p class="mb-1">
+              <a class="link-secondary text-decoration-none" href="Phone:+381615579801">Call: +381 61 55 79 801</a>
+          </p>
+          <p class="mb-0">
+              <a class="link-secondary text-decoration-none" href="mailto:angelbeauty@gmail.com">angelbeauty@gmail.com</a>
+          </p>
+          </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+          <h4 class="widget-title mb-4">Learn more</h4>
+          <ul class="list-unstyled">
+              <li class="mb-2">
+              <a href="index.html" class="link-secondary text-decoration-none link">Home</a>
+              </li>
+              <li class="mb-2">
+              <a href="about.html" class="link-secondary text-decoration-none link">About us</a>
+              </li>
+              <li class="mb-2">
+              <a href="gallery.html" class="link-secondary text-decoration-none link">Gallery</a>
+              </li>
+              <li class="mb-2">
+              <a href="author.html" class="link-secondary text-decoration-none link">Author</a>
+              </li>
+              <li class="mb-0">
+              <a href="contact.html" class="link-secondary text-decoration-none link">Contact</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+      <div class="col-12 col-lg-3 col-xl-4">
+          <div class="widget">
+          <h4 class="widget-title mb-4">Our Newsletter</h4>
+          <p class="mb-4">Sign up for our Newsletter and get the first information about new offers.</p>
+          <form action="obrada.php" method="post">
+              <div class="row gy-4">
+              <div class="col-12">
+                  <div class="input-group">
+                  <span class="input-group-text" id="email-newsletter-addon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <input type="email" class="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="d-grid">
+                  <button class="btn btn-dark" type="submit">Sign up</button>
+                  </div>
+              </div>
+              </div>
+          </form>
+          </div>
+      </div>
+      </div>
+  </div>
+  </section>
+  <div class=" down border-top .py-4 .py-md-5 .py-xl-8">
+  <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+      <div class="col-xs-12 col-md-7 order-1 order-md-0">
+          <div class="copyright text-center  text-md-start">
+          <p>Copyright © Andjela Arsic 2024. All Rights Reserved.</p>
+          </div>
+          
+      </div>
+      <div id="socials-links" class="col-xs-12 .col-md-5 order-0 order-md-1"> 
+          <ul class="nav justify-content-center justify-content-md-end">
+          <li class="nav-item">
+              <a class="nav-link .fs-3" href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link .fs-3" href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link .fs-3" href="https://twitter.com/">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link .fs-3" href="">
+                <i class="fa-brands fa-github"></i>
+              </a>
+          </li>
+          </ul>
+      </div>
+      </div>
+  </div>
+  </div>
+</footer>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
